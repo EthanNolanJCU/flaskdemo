@@ -4,9 +4,9 @@
 {% if page %}
 {#    TODO: add page title and more... #}
 
-  <h2>Summary </h2>
+  <h2>Summary: {{ page.title }} </h2>
     <p>{{ page.summary }}</p>
-    <p><a href="{{ page.url }}"> {{ page.title }}</a> </p>
+    <p><a href="{{ page.url }}"> {{ page.title }}</a></p>
 {% else %}
   <h1>Error</h1>
 {% endif %}
